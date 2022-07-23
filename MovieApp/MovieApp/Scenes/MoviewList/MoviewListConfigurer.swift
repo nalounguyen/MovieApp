@@ -8,7 +8,7 @@
 import Foundation
 
 struct MoviewListConfigurer {
-    static func configure(vc: MoviewListViewController) {
+    static func configure(vc: MovieListViewController) {
         let mu = MovieUseCaseImpl(repository: MovieRepositoryImpl())
         let vm = MoviewListViewModelImpl(movieUseCase: mu)
         vc.viewModel = vm 
